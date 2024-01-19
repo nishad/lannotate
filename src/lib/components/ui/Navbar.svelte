@@ -28,9 +28,9 @@
 			<NavHamburger />
 		</div>
 		<NavUl {activeUrl} class="order-1">
-			<NavLi href="https://nishad.github.io/lannotae">Home</NavLi>
-			<NavLi href="https://nishad.github.io/lannotae/ner">NER</NavLi>
-			<NavLi href="https://nishad.github.io/lannotae/full-text-search">Full-text Search</NavLi>
+			<NavLi href="https://nishad.github.io/lannotate">Home</NavLi>
+			<NavLi href="https://nishad.github.io/lannotate/ner">NER</NavLi>
+			<NavLi href="https://nishad.github.io/lannotate/full-text-search">Full-text Search</NavLi>
 		</NavUl>
 	</Navbar>
 </div>
