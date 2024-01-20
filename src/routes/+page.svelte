@@ -8,10 +8,17 @@
 			<p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
 				This project is a proof of concept and is not intended for production use in its current
 				form. It includes cell ontology as the only out-of-the-box annotation source. This
-				implementation is provided under the MIT License.
+				implementation is provided under the <a
+					href="https://nishad.mit-license.org"
+					class="decoration-blue-600 hover:underline">MIT License</a
+				>.
 			</p>
 			<p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-				Lannotate was developed at BLAH-8 as a hackathon project.
+				Lannotate was developed at <a
+					href="https://blah8.linkedannotation.org"
+					class="decoration-blue-600 hover:underline"
+					>the 8<sup>th</sup> Biomedical Linked Annotation Hackathon (BLAH8)</a
+				> as a hackathon project.
 			</p>
 		</div>
 	</div>
