@@ -19,7 +19,7 @@
 			<ToolbarLink
 				class="hidden hover:text-gray-900 dark:hover:text-white sm:inline-block"
 				name="View on GitHub"
-				href="{base}/"
+				href="https://github.com/nishad/lannotate"
 			>
 				<GitHub />
 			</ToolbarLink>
