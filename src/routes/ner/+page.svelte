@@ -4,9 +4,6 @@
 
 	import saveAs from 'file-saver';
 
-	import tippy from 'tippy.js';
-	import 'tippy.js/dist/tippy.css';
-
 	import { DownloadOutline, FileCsvOutline, FileLinesOutline } from 'flowbite-svelte-icons';
 
 	import { Label, Textarea } from 'flowbite-svelte';
@@ -60,12 +57,11 @@
 
 			if (element.uid) {
 				const url = `http://purl.obolibrary.org/obo/${element.uid}`;
-				passage += `${space}<a href="${url}" data-tippy-content="${element.uid}" class="underline decoration-sky-500" title="${element.uid}">${text}</a>`;
+				passage += `${space}<a href="${url}" class="bg-sky-200 underline decoration-sky-500" title="${element.uid}">${text}</a>`;
 			} else {
 				passage += space + text;
 			}
 		});
-		tippy('[data-tippy-content]');
 		return passage;
 	}
 
