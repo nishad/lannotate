@@ -10,7 +10,7 @@
 
 <div class="container mx-auto">
 	<Navbar fluid="false">
-		<NavBrand href="/">
+		<NavBrand href="{base}/">
 			<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
 				>Lannotate</span
 			>
@@ -19,7 +19,7 @@
 			<ToolbarLink
 				class="hidden hover:text-gray-900 dark:hover:text-white sm:inline-block"
 				name="View on GitHub"
-				href="https://github.com/nishad/lannotate"
+				href="{base}/"
 			>
 				<GitHub />
 			</ToolbarLink>
@@ -28,9 +28,10 @@
 			<NavHamburger />
 		</div>
 		<NavUl {activeUrl} class="order-1">
-			<NavLi href="https://nishad.github.io/lannotate">Home</NavLi>
-			<NavLi href="https://nishad.github.io/lannotate/ner">NER</NavLi>
-			<NavLi href="https://nishad.github.io/lannotate/full-text-search">Full-text Search</NavLi>
+			<NavLi href="{base}/">Home</NavLi>
+			<NavLi href="{base}/ner/">NER</NavLi>
+			<NavLi href="{base}/full-text-search/">Full-text Search</NavLi>
+			<NavLi href="{base}/vector-search/">Vector Search</NavLi>
 		</NavUl>
 	</Navbar>
 </div>
