@@ -1,3 +1,5 @@
+import { base } from '$app/paths';
+
 export async function load({ fetch, params }) {
 	const sample_text = `In the bustling world of cellular research, Dr. Alice Thompson ventured deep into the study of hematopoiesis, the process forming various blood cellular components. Her primary focus was on the intricate dance of differentiation and proliferation, particularly within the bone marrow, where hematopoietic stem cells serve as the wellspring for diverse blood cell types.
 
@@ -10,7 +12,7 @@ Another group was engrossed in studying myeloid cells, particularly monocytes an
 Amidst the fluorescence-lit benches, Alice found herself marveling at the complexity of cellular differentiation. Each cell, from B cells to natural killer cells, played a unique and crucial role in the body's equilibrium. Her team's recent work on erythrocytes and their developmental pathway from erythroid progenitor cells was promising, potentially opening new avenues for treating blood disorders.
 
 As the day drew to a close, Alice reflected on the beauty of cellular biology, a symphony of processes harmoniously orchestrated at the microscopic level. The Cell Ontology labels, she thought, were not just identifiers but signposts in a vast, uncharted biological landscape waiting to be explored.`;
-	const res = await fetch(`../data/cl-ner-wink-model_v01.json`);
+	const res = await fetch(`${base}/data/cl-ner-wink-model_v01.json`);
 	const model = await res.json();
 	return { model, sample_text };
 }
