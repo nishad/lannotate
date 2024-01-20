@@ -8,7 +8,7 @@ Lannotate was developed at [BLAH-8](https://blah8.linkedannotation.org) as a hac
 
 ## Developing
 
-Once you've cloned this roject and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've cloned this project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -19,10 +19,15 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
+To create a production version of the app:
 
 ```bash
 npm run build
 ```
 
 You can preview the production build with `npm run preview`.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
