@@ -1,6 +1,7 @@
 <script>
+	import { base } from '$app/paths';
 	import { search } from '@orama/orama';
-	import { restore } from '@orama/plugin-data-persistence';
+	import { restore } from '$lib/orama-data-persistence';
 
 	import PreloadingIndicator from '$lib/components/utils/PreloadingIndicator.svelte';
 
@@ -42,9 +43,8 @@
 		loading = true;
 
 		// Do task
-		const data = await fetch(`../data/cell-ontology-index_v01.json`);
+		const data = await fetch(`${base}/data/cell-ontology-index_v01.json`);
 		let JSONIndex = await data.text();
-
 		index = await restore('json', JSONIndex);
 
 		// Set loading to be false;
@@ -56,9 +56,7 @@
 		if (!index) return;
 		// if term is empty, do nothing
 		if (!term || term === '') return;
-		console.log('searching');
 		results = await search(index, { term: term, limit: 25 });
-		// console.log(results);
 		results = results.hits;
 	}
 
@@ -69,7 +67,7 @@
 	<PreloadingIndicator {loading} />
 </div>
 
-{#if index}
+{#if index && !loading}
 	<div>
 		<main class="mx-auto w-full">
 			<div class="flex flex-col items-center justify-center">
