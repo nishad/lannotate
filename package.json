@@ -1,6 +1,6 @@
 {
 	"name": "lannotate",
-	"version": "0.0.1",
+	"version": "0.0.17",
 	"description": "Lightweight Linked Annotation",
 	"author": {
 		"name": "Nishad Thalhath"
@@ -40,10 +40,9 @@
 	"dependencies": {
 		"@orama/orama": "2.0.1",
 		"@orama/plugin-data-persistence": "2.0.1",
+		"@xenova/transformers": "2.14.0",
 		"file-saver": "2.0.5",
-		"file-saver-es": "2.0.5",
 		"flowbite-svelte-icons": "1.0.2",
-		"tippy.js": "6.3.7",
 		"wink-eng-lite-web-model": "1.5.2",
 		"wink-ner": "2.1.0",
 		"wink-nlp": "1.14.3",
