@@ -12,9 +12,7 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-			// base: process.argv.includes('dev') ? '' : "process.env.BASE_PATH"
-			// base: 'https://nishad.github.io/lannotae'
-			// base: process.argv.includes('dev') ? '' : 'https://nishad.github.io/lannotae'
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		}
 	},
 
