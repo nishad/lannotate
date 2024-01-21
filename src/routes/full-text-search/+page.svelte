@@ -55,13 +55,21 @@
 		// if index is not loaded, do nothing
 		if (!index) return;
 		// if term is empty, do nothing
-		if (!term || term === '') return;
+		if (!term || term === '') {
+			results = [];
+			return;
+		}
 		results = await search(index, { term: term, limit: 25 });
 		results = results.hits;
 	}
 
 	$: doSearch(input);
 </script>
+
+<svelte:head>
+	<title>Lannotate: Cell Ontology Full text search</title>
+	<meta name="description" content="Cell Ontology Full text search" />
+</svelte:head>
 
 <div class="w-full">
 	<PreloadingIndicator {loading} />

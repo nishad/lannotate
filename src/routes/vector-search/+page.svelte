@@ -24,7 +24,6 @@
 
 	$: input = '';
 	let results = [];
-	let entities = [];
 
 	export const snapshot = {
 		capture: () => input,
@@ -73,7 +72,10 @@
 		// if index is not loaded, do nothing
 		if (!index) return;
 		// if term is empty, do nothing
-		if (!term || term === '') return;
+		if (!term || term === '') {
+			results = [];
+			return;
+		}
 		const termEmbedding = await generateEmbedding(term);
 		// results = await search(index, { term: term, limit: 25 });
 		// console.log(results);
@@ -94,6 +96,11 @@
 
 	$: doSearch(input);
 </script>
+
+<svelte:head>
+	<title>Lannotate: Cell Ontology Vector search</title>
+	<meta name="description" content="Cell Ontology Vector search" />
+</svelte:head>
 
 <div class="w-full">
 	<PreloadingIndicator {loading} />
@@ -146,7 +153,7 @@
 			</div>
 		</main>
 	</div>
-{:else}
+{:else if !loading}
 	<div class="w-full">
 		<div class="w-full">
 			<Button size="xs" class="my-3" color="alternative" on:click={loadIndex}

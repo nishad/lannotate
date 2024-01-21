@@ -109,6 +109,11 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Lannotate: Cell Ontology Named Entity Recognition</title>
+	<meta name="description" content="Cell Ontology Named Entity Recognition" />
+</svelte:head>
+
 <div class="mx-auto flex w-full px-4">
 	<main class="mx-auto w-full">
 		<div class="flex flex-col items-center justify-center">
