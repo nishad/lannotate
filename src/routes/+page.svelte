@@ -1,3 +1,10 @@
+<svelte:head>
+	<title>Lannotate: Lightweight Linked Annotation</title>
+	<meta name="description" content="Lightweight Linked Annotation Proof of Concept" />
+	<meta name="keywords" content="Linked Data, Annotation, Proof of Concept" />
+	<meta name="author" content="Nishad Thalhath" />
+</svelte:head>
+
 <div class="bg-gray-100">
 	<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
 		<div class="lg:text-center">
